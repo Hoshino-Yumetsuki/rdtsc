@@ -2,13 +2,15 @@
   "compilerOptions": {
     "outDir": "lib",
     "rootDir": "src",
-    "target": "es2022",
-    "module": "nodenext",
-    "sourceMap": true,
+    "target": "ES2022",
+    "module": "ESNext",
+    "sourceMap": false,
     "declaration": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
     "strict": true,
+    "emitDeclarationOnly": true,
+    "moduleResolution": "bundler"
   },
   "include": [
     "src",

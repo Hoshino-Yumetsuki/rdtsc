@@ -1,7 +1,7 @@
 {
-  "name": "dtsc",
-  "description": "Generate bundled TypeScript declaration files",
-  "version": "3.1.0",
+  "name": "rdtsc",
+  "description": "Generate bundled TypeScript declaration files with rollup",
+  "version": "1.0.0",
   "type": "module",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -12,25 +12,32 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shigma/dtsc.git"
+    "url": "git+https://github.com/Hoshino-Yumetsuki/rdtsc.git"
   },
   "bugs": {
-    "url": "https://github.com/shigma/dtsc/issues"
+    "url": "https://github.com/Hoshino-Yumetsuki/rdtsc/issues"
   },
-  "homepage": "https://github.com/shigma/dtsc",
-  "author": "Shigma <shigma10826@gmail.com>",
+  "homepage": "https://github.com/Hoshino-Yumetsuki/rdtsc",
+  "author": "Q78KG <hoshino-yumetsuki@outlook.com>",
   "license": "MIT",
   "scripts": {
-    "build": "tsc -b"
+    "build": "kumoya && node --import tsx src/bin.ts"
   },
   "devDependencies": {
     "@types/node": "^22.7.5",
+    "kumoya": "^2.0.3",
+    "rolldown": "1.0.0-beta.3",
+    "tsx": "^4.19.3",
     "typescript": "^5.6.2"
   },
   "peerDependencies": {
     "typescript": "*"
   },
   "dependencies": {
+    "@rollup/plugin-multi-entry": "^6.0.1",
+    "rollup": "^4.34.8",
+    "rollup-plugin-dts": "^6.1.1",
     "tsconfig-utils": "^4.1.1"
-  }
+  },
+  "packageManager": "yarn@4.6.0+sha512.5383cc12567a95f1d668fbe762dfe0075c595b4bfff433be478dbbe24e05251a8e8c3eb992a986667c1d53b6c3a9c85b8398c35a960587fbd9fa3a0915406728"
 }
