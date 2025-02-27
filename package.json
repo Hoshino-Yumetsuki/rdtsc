@@ -1,6 +1,6 @@
 {
   "name": "rdtsc",
-  "description": "Generate bundled TypeScript declaration files with rollup",
+  "description": "Generate bundled TypeScript declaration files with Rollup",
   "version": "1.0.0",
   "type": "module",
   "main": "lib/index.js",
