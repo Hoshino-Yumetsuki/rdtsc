@@ -1,5 +1,5 @@
 {
-  "name": "rdtsc",
+  "name": "dtsc-rollup",
   "description": "Generate bundled TypeScript declaration files with Rollup",
   "version": "1.0.0",
   "type": "module",
@@ -20,7 +20,8 @@
   "author": "Q78KG <hoshino-yumetsuki@outlook.com>",
   "license": "MIT",
   "scripts": {
-    "build": "kumoya && node --import tsx src/bin.ts"
+    "build": "kumoya && node --import tsx src/bin.ts",
+    "publish": "yarn npm publish"
   },
   "devDependencies": {
     "@types/node": "^22.7.5",
