@@ -1,6 +1,6 @@
 # rdtsc
 
-[![npm](https://img.shields.io/npm/v/rdtsc?style=flat-square)](https://www.npmjs.com/package/rdtsc)
+[![npm](https://img.shields.io/npm/v/rdtsc?style=flat-square)](https://www.npmjs.com/package/dtsc-rollup)
 [![GitHub](https://img.shields.io/github/license/Hoshino-Yumetsuki/rdtsc?style=flat-square)](https://github.com/Hoshino-Yumetsuki/rdtsc/blob/main/LICENSE)
 
 Generate bundled TypeScript declaration files with Rollup.
