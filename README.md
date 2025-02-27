@@ -1,9 +1,9 @@
 # dtsc
 
-[![npm](https://img.shields.io/npm/v/dtsc?style=flat-square)](https://www.npmjs.com/package/dtsc)
-[![GitHub](https://img.shields.io/github/license/shigma/dtsc?style=flat-square)](https://github.com/shigma/dtsc/blob/master/LICENSE)
+[![npm](https://img.shields.io/npm/v/rdtsc?style=flat-square)](https://www.npmjs.com/package/rdtsc)
+[![GitHub](https://img.shields.io/github/license/Hoshino-Yumetsuki/rdtsc?style=flat-square)](https://github.com/Hoshino-Yumetsuki/rdtsc/blob/main/LICENSE)
 
-Generate bundled TypeScript declaration files.
+Generate bundled TypeScript declaration files with Rollup.
 
 ## Background
 
@@ -26,7 +26,7 @@ Supposing you have a project structure like this:
 └── tsconfig.json
 ```
 
-After running `tsc --outFile lib/index.d.ts`, the following file will be generated:
+After running `tsc --outDir lib`, the following file will be generated:
 
 ```ts
 // lib/index.d.ts
@@ -55,14 +55,14 @@ This is where dtsc comes in. It generates a single bundled declaration file whic
 
 ## Usage
 
-dtsc supports `outFile` option out of the box.
+rdtsc supports `outDir` option out of the box.
 
 ```jsonc
 // tsconfig.json
 {
   "compilerOptions": {
     "rootDir": "src",
-    "outFile": "lib/index.d.ts",
+    "outDir": "lib",
   },
   "include": [
     "src",
@@ -75,7 +75,7 @@ dtsc supports `outFile` option out of the box.
 {
   "typings": "lib/index.d.ts",
   "scripts": {
-    "build": "dtsc",
+    "build": "rdtsc",
   },
 }
 ```
@@ -84,14 +84,4 @@ dtsc supports `outFile` option out of the box.
 npm run build
 ```
 
-## Limitations
-
-This package uses a string-based approach to generate bundle from a .d.ts file. It may have some limitations:
-
-- If you find one, welcome to report an issue.
-
 <!-- In most cases I would recommend using tsc directly. -->
-
-## See also
-
-- [atsc](https://github.com/shigma/atsc): augment tsc with non-typescript files support
